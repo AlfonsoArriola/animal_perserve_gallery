@@ -4,15 +4,27 @@
 }
 
 body{
-	background: black;
-	color: white;
-	max-width: 1600px;
-    margin: 0 auto;
+	background: #1a1717;
+  color: #e7f3e5;
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: 'Suravaram', serif;
 }
 
 header{
 	text-align: center;
-	background: grey;
+	background: #e17600;
+  color: #162135;
+  font-family: 'Ledger', serif;
+
+}
+
+p{
+  padding: 4px;
+}
+
+a{
+  color: gold;
 }
 
 ul{
@@ -32,6 +44,10 @@ ul{
 li{
    list-style: none;
    position: relative;
+}
+
+li:hover{
+  border: 6px solid #38ff9b;
 }
 
 li p{
@@ -80,6 +96,10 @@ li:nth-child(35){
 li:nth-child(40){
    grid-row: span 2;
    grid-column: span 3;
+}
+
+li:nth-child(44){
+   grid-column: span 2;
 }
 
 @media screen and (max-width: 600px) {
