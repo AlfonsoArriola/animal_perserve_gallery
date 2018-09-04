@@ -9,22 +9,54 @@ body{
   max-width: 1600px;
   margin: 0 auto;
   font-family: 'Suravaram', serif;
+  font-size: 1em;
+}
+
+h1{
+  position: relative;
+  display: inline-block;
+  color: #99FFE6;
+  font-size: 2.5em;
+}
+
+h1::before, h1::after{
+  content: '';
+  height: 100%;
+  display: block;
+  position: absolute;
+}
+
+h1::before{
+  background: #1a1717;
+  z-index: -1;
+  left: -17px;
+  right: -17px;
+}
+
+h1::after{
+ background: #FFDC73;
+ width: 100vw;
+ left: 50%;
+ transform: translateX(-50%);
+ top: 0;
+ z-index: -2;
 }
 
 header{
 	text-align: center;
-	background: #e17600;
   color: #162135;
-  font-family: 'Ledger', serif;
+  font-family: 'Kaushan Script', cursive;
 
 }
 
 p{
   padding: 4px;
+  line-height: 40px;
 }
 
 a{
   color: gold;
+  text-decoration: none;
 }
 
 ul{
@@ -111,6 +143,9 @@ li:nth-child(44){
 	}
 
 }
+
+
+
 
 
 
