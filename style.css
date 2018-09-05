@@ -76,6 +76,8 @@ ul{
 li{
    list-style: none;
    position: relative;
+   font-size: 1.2em;
+   line-height: 25px;
 }
 
 li:hover{
@@ -133,6 +135,37 @@ li:nth-child(40){
 li:nth-child(44){
    grid-column: span 2;
 }
+
+li[data-tool-tip] {
+  position: relative;
+}
+
+li[data-tool-tip]::after {
+   content: attr(data-tool-tip);
+   display: block;
+   position: absolute;
+   background: rgba(244, 191, 66, 0.5);
+   border-radius: 3%;
+   padding:  1em;
+   top: 60px;
+   color: #3d0101;
+/*   white-space: nowrap;*/
+   transform: scale(0);
+   transition: transform ease-out 150ms;
+}
+
+li[data-tool-tip]:hover::after {
+  transform: scale(1);
+}
+
+footer{
+  height: 6rem;
+  padding: 2rem 4rem;
+}
+
+
+
+
 
 @media screen and (max-width: 600px) {
    ul{
